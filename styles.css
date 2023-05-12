@@ -39,6 +39,9 @@ body {
 .gap {
   gap: 10px;
 }
+.gap-sm {
+  gap: 5px;
+}
 .circle {
   border-radius: 50%;
 }
@@ -51,6 +54,9 @@ body {
 .flex-full {
   flex: 1;
 }
+.grid {
+  display: grid;
+}
 .block {
   display: block;
 }
@@ -62,6 +68,9 @@ body {
 }
 .absolute {
   position: absolute;
+}
+.overflow {
+  overflow: hidden;
 }
 
 .mr {
@@ -85,6 +94,9 @@ body {
 }
 .border-b {
   border-bottom: 1px solid #aaa;
+}
+.border-radius {
+  border-radius: 8px;
 }
 .w-full {
   width: 100%;
@@ -244,7 +256,7 @@ main {
   transform: translateX(-70px);
   z-index: 3;
 }
-.column-1 {
+.body-left {
   flex: 3;
   margin: 10px 5px;
 }
@@ -252,22 +264,23 @@ main {
   border: 1px solid #000;
   border-radius: 8px;
 }
-.column-2 {
+.body-right {
   flex: 4;
   background: red;
   margin: 10px 5px;
 }
-.img-1 {
+.intro-img {
   height: 150px;
   width: 120px;
   object-fit: cover;
-  transition: height 0.2s;
+  transition: .2s ease;
   border-radius: 8px;
+  /* border: 1px solid red; */
 }
-a:hover > .img-1 {
-  height: 151px;
+a:hover > .intro-img {
+  transform: scale(1.05, 1.05);
 }
-.text-1 {
+.gallery {
   position: absolute;
   top: 100%;
   left: 25px;
@@ -278,11 +291,11 @@ a:hover > .img-1 {
 .intro-infor:hover {
   text-decoration: underline;
 }
-.see-photo {
-  background: #fff;
-  border-radius: 4px;
-  border: none;
+.see-photos {
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 20px;
+  overflow: hidden;
 }
-.see-photo:hover {
-  background: #eee;
+.see-photos img {
+  display: block;
 }
