@@ -225,6 +225,10 @@ main {
   height: 3px;
   left: 0;
 }
+.menu > a.underline::after {
+  top: unset;
+  bottom: 0;
+}
 .menu > a:hover::after {
   background: blue;
 }
@@ -327,7 +331,7 @@ a:hover > .intro-img {
 .text-black {
   color: #000;
 }
-.text-black:hover {
+.text-black:hover strong {
   text-decoration: underline;
 }
 .see-photos {
