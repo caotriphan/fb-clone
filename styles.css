@@ -22,7 +22,7 @@ body {
   border: none;
 }
 .border {
-  border: 1px solid red;
+  border: 1px solid #000;
 }
 .border-t-l-radius {
   border-top-left-radius: 8px;
@@ -69,6 +69,9 @@ body {
 .rounded {
   border-radius: 8px;
 }
+.display-none {
+  display: none;
+}
 .flex {
   display: flex;
 }
@@ -96,9 +99,15 @@ body {
 .bg-graylight {
   background: #eeeeee62;
 }
+.white-space {
+  white-space: nowrap;
+}
 
 .mr {
   margin-right: 8px;
+}
+.mb-sm {
+  margin-bottom: 5px;
 }
 .mb {
   margin-bottom: 8px;
@@ -117,7 +126,7 @@ body {
   border: none;
 }
 .border-b {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #00000062;
 }
 .border-radius {
   border-radius: 8px;
@@ -341,8 +350,11 @@ a:hover > .intro-img {
 .see-photos img {
   display: block;
 }
-.grid-template-columns {
+.grid-template-columns-3 {
   grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-template-columns-2 {
+  grid-template-columns: 1fr 1fr;
 }
 .friend img {
 border-radius: 8px;
@@ -357,4 +369,17 @@ border-radius: 8px;
 }
 .mind:hover {
   background: #eee;
+}
+.number {
+  display: flex;
+  font-size: 30px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: none;
+  /* border: 1px solid red; */
+ align-items: center;
+ justify-content: center;
+ background: #00000050;
 }
